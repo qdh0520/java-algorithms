@@ -52,7 +52,8 @@ public class QuickSort {
         int[] list1={5,2,9,3,8,21,0,10,6,7};
 
         quickSort(list1);
-        for (int i=0; i<list1.length;i++)
-            System.out.println(list1[i]+"");
+        for (int i=0; i<500000000;i++)
+            System.out.println(list1[1]+"");
+
     }
 }
