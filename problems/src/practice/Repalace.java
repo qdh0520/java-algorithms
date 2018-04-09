@@ -35,6 +35,7 @@ public class Repalace {
         StringBuilder result = new StringBuilder();
         for (int i = 0;i<s.length();i++){
             char a = s.charAt(i);
+
             if (String.valueOf(a).equals(" ")){
                 result.append("%20");
             }else {

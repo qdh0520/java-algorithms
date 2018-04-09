@@ -56,4 +56,14 @@ public class LinkedListCycle
         return false;
     }
 
+    public  static  class Node{
+        int val;
+        Node next ;
+        public  Node(int x){
+            this.val=x;
+            next=null;
+        }
+
+    }
+
 }

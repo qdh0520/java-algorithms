@@ -28,11 +28,14 @@ public class arrayTest {
         arrayList.toArray(stringArr);
 //        for (String s : stringArr)
 //            System.out.println(s);
+        for (int i = 0; i < arrayList.size(); i++) {
+            System.out.println(stringArr[i]);
+        }
        int sum=0;
        int k=1;
         for (int i = 0; i <8 ; i++) {
             sum=k*2;
-//            System.out.println(sum);
+//
             k=sum;
         }
 //        System.out.println(sum);

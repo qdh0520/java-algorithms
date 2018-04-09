@@ -51,13 +51,13 @@ public class MergeTwoSortedList
         if(l1.val <= l2.val)
         {    result =l1;
             l1.next = mergeTwoLists(l1.next, l2);
-//            return l1;
+            return l1;
         }
         else
         {   result=l2;
             l2.next = mergeTwoLists(l1, l2.next);
-//            return l2;
+            return l2;
         }
-        return  result;
+//        return  result;
     }
 }

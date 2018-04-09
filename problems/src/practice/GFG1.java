@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Scanner;
 
 class GFG1 {
 
@@ -62,6 +63,8 @@ class GFG1 {
 
                 return out.toString();
         }
+
+
         return "#";
     }
 
@@ -74,5 +77,21 @@ class GFG1 {
         map.put("a",1);
 
         System.out.println(mostFrequent(arr, n));
+
+        try {
+            Scanner scanner =new Scanner(System.in);
+//            String abc=scanner.nextLine();
+            while (scanner.hasNext()){
+                int nm =scanner.nextInt();
+                int abcn=scanner.nextInt();
+                int a =scanner.nextInt();
+                System.out.println(nm);
+                System.out.println(abcn);
+                System.out.println(a);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

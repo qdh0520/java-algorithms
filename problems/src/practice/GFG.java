@@ -69,6 +69,9 @@ class GFG {
         for (int i = 0; i <arr.length ; i++) {
             System.out.println(arr[i]);
         }
+        Scanner in =new Scanner(System.in);
+         in.next();
+
 
     }
 }

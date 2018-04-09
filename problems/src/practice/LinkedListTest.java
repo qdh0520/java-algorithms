@@ -9,7 +9,7 @@ import java.util.List;
  */
 public class LinkedListTest {
     public static void main(String[] args) {
-        LinkedList<String> lList = new LinkedList<String>();
+        LinkedList<String> lList = new LinkedList<>();
         lList.add("1");
         lList.add("2");
         lList.add("3");

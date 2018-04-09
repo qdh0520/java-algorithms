@@ -38,7 +38,10 @@ public class ReverseLinkedList
         node4.next = node5;
         //node5.next = node6;
         ListNode newNode = new ReverseLinkedList().reverseList(node1);
+        while (newNode!=null){
         System.out.println(newNode.val);
+        newNode=newNode.next;
+        }
     }
 
     public ListNode reverseList(ListNode head)
@@ -60,4 +63,11 @@ public class ReverseLinkedList
         node.next = head;
         return head;
     }
+//     public  ListNode rev(ListNode head){
+//        if(head.next==null){
+//             return head;
+//        }
+//
+//
+//     }
 }

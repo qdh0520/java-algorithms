@@ -141,7 +141,7 @@ public class TreeNode {
 
                 }
                 if (stack1.peek()!=stack2.peek())
-                    return  temp;
+                    return  temp=stack1.pop();
 
             }
 
@@ -176,6 +176,23 @@ public class TreeNode {
 
 
 
+      public boolean hasLoop(Node head){
+
+        if (head.next==null)  return  false;
+        Node fast =head;
+        Node slow =head;
+        while (slow.next!=null&&fast.next.next!=null){
+            if(slow==fast);
+
+             return  true;
+
+             }
+
+
+        return false;
+      }
+
+
     public static void main(String[] args) {
         Node a =new Node(3) ;
         Node b =new Node(4) ;
@@ -183,33 +200,14 @@ public class TreeNode {
         a.next = b;
         b.next = c;
 //        System.out.println(a.next.val);
-      Node d= ReverseList(a);
-//       Node e = null;
-//       Node head = d;
-//           while (d!=null){
-//                e= d;
-////               System.out.println(d.val);
-//               d=d.next;
-////               e= e.next;
-//
-//
-//           }
-                Node m =new Node(1) ;
-                 Node n =new Node(  1 );
-                 Node k =new Node(2) ;
-                 m.next =n;
-                 n.next= k;
-//                    Node f =   Mergelist(a,m) ;
-//            while (f!=null){
-//                System.out.println(f.val);
-//                f=f.next;
-//
-//     }
-            while (d!=null){
-                System.out.println(d.val);
-                d =d.next ;
-            }
-
+         Node d=a ;
+         a=a.next;
+         Node e= a;
+        System.out.println(d.val);
+        System.out.println(d);
+        System.out.println(a.val);
+        System.out.println(a);
+        System.out.println(d.next.val+ "hei");
 
 
     }
